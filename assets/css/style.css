@@ -110,7 +110,7 @@ html {
     /* min-height: 600px; */
     margin-top: 46px;
     padding-top: 50%;
-    background: url('/w3_band/assets/img/newyork.png') top center / cover no-repeat;
+    background: url(/assets/img/newyork.png) top center / cover no-repeat;
     /* background-color: #2f2f2f; */
 }
 
