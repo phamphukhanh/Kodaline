@@ -231,7 +231,7 @@
 
             <!-- Modal header -->
             <header class="modal-header">
-                <i class="ti-bag"></i>
+                <i class="modal-bag-icon ti-bag"></i>
                 Tickets
             </header>
 
@@ -239,22 +239,22 @@
             <div class="modal-body">
 
                 <!-- Label 1 -->
-                <label for="" class="modal-label">
+                <label for="quantity" class="modal-label">
                     <i class="ti-shopping-cart"></i>
                     Tickets, $15 per person
                 </label>
 
                 <!-- Input 1 -->
-                <input type="text" class="modal-input" placeholder="How many?">
+                <input id="quantity" type="number" min="1" class="modal-input" placeholder="How many?">
 
                 <!-- Label 2 -->
-                <label for="" class="modal-label">
+                <label for="modal-email" class="modal-label">
                     <i class="ti-user"></i>
                     Send to
                 </label>
 
                 <!-- Input 2 -->
-                <input type="email" class="modal-input" placeholder="Enter email">
+                <input id="modal-email" type="email" class="modal-input" placeholder="Enter email">
 
                 <!-- Button pay -->
                 <button id="pay-button">
