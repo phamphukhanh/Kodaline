@@ -156,7 +156,7 @@
                                 <p class="place-description">
                                     “Music is everywhere. It's in the air between us, waiting to be sung.”
                                 </p>
-                                <a href="#" class="place-buy-btn">Buy Tickets</a>
+                                <button class="place-buy-btn js-buy-ticket">Buy Tickets</button>
                             </div>
 
                         </div>
@@ -174,7 +174,7 @@
                                 <p class="place-description">
                                     “Music is everywhere. It's in the air between us, waiting to be sung.”
                                 </p>
-                                <a href="#" class="place-buy-btn">Buy Tickets</a>
+                                <button class="place-buy-btn js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
 
@@ -191,7 +191,7 @@
                                 <p class="place-description">
                                     “Music is everywhere. It's in the air between us, waiting to be sung.”
                                 </p>
-                                <a href="#" class="place-buy-btn">Buy Tickets</a>
+                                <button class="place-buy-btn js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
 
@@ -221,8 +221,8 @@
         </div>
     </div>
 
-    <div class="modal">
-        <div class="modal-container">
+    <div class="modal js-modal">
+        <div class="modal-container js-modal-container">
 
             <!-- Close button -->
             <div class="modal-close">
@@ -267,6 +267,34 @@
             </footer>
         </div>
     </div>
+
+    <script>
+        const buyBtns = document.querySelectorAll('.js-buy-ticket')
+        const modal = document.querySelector('.js-modal')
+        const modalClose = document.querySelector('.modal-close')
+        const modalContainer = document.querySelector('.js-modal-container')
+
+        function showModal() {
+            modal.classList.add('modal-open')
+        }
+        for (const buyBtn of buyBtns) {
+            buyBtn.addEventListener('click', showModal)
+        }
+
+        function closeModal() {
+            modal.classList.remove('modal-open')
+        }
+
+        modalClose.addEventListener('click', closeModal)
+
+        modal.addEventListener('click', closeModal)
+
+        function stopTheBubble(event) {
+            event.stopPropagation()
+        }
+
+        modalContainer.addEventListener('click', stopTheBubble)
+    </script>
 </body>
 
 </html>
