@@ -7,8 +7,12 @@
 }
 
 html {
+    scroll-behavior: smooth;
+    overflow-y: scroll;
     font-family: Helvetica, Arial, sans-serif;
 }
+
+body {}
 
 /* Common */
 
@@ -175,7 +179,7 @@ html {
     /* min-height: 600px; */
     margin-top: 46px;
     padding-top: 50%;
-    background: url("../img/newyork.png") top center / cover no-repeat;
+    background: url("../img/slider/slider1.jpeg") top center / cover no-repeat;
     /* background-color: #2f2f2f; */
 }
 
@@ -195,6 +199,7 @@ html {
 }
 
 #slider .text-description {
+    font-style: italic;
     font-size: 20px;
 }
 
