@@ -1,6 +1,6 @@
 # Kodaline website
 ## Descriptions
-This is my first website using **HTML, CSS** (and few **JavaScripts**) about an Irish band called Kodaline <br />
+This is my first website about an Irish band called Kodaline <br />
 This website is based on a website called "The Band" by W3Schools <br />
 Made by following the tutorial on fullstack.edu.vn (F8) with some of my modifications
 ## Languages have been used
